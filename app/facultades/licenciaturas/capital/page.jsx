@@ -20,8 +20,8 @@ export default function CapitalPage() {
   return (
     <SectionContainer theme="#f5f5f5">
       <TextCard shadow={true} theme="#EEF2F7">
-        <img className="image__16-9" src="/images/imageLic1.png" alt="" />
-        <Subtitle text="Bachelor’s Degree in Business Economic Management" />
+        <img className="image__16-9" src="/images/imageLic3.png" alt="" />
+        <Subtitle text="Bachelor’s Degree in Human Capital Managment" />
         <button className="button__form" onClick={showCard}>Sign up now</button>
       </TextCard>
 
