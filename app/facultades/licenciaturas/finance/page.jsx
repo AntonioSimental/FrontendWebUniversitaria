@@ -21,7 +21,7 @@ export default function FinancePage() {
     <SectionContainer theme="#f5f5f5">
       <TextCard shadow={true} theme="#EEF2F7">
         <img className="image__16-9" src="/images/imageLic1.png" alt="" />
-        <Subtitle text="Bachelor’s Degree in Business Economic Management" />
+        <Subtitle text="Bachelor’s Degree in Corporate Finance" />
         <button className="button__form" onClick={showCard}>Sign up now</button>
       </TextCard>
 
