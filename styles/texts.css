@@ -1,0 +1,22 @@
+.title {
+    font-size: 50px;
+    color: var(--color, #333);
+}
+
+.subtitle {
+    color: var(--color, #333);
+    margin: 15px;
+}
+
+.paragraph {
+    max-width: 900px;
+    color: var(--color, #333);
+    text-align: var(--align);
+    font-size: 17px;
+    margin: 5px;
+}
+
+.list__item {
+    list-style-position: inside;
+    color: var(--color, #333);
+}

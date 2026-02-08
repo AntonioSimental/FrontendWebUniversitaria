@@ -1,0 +1,16 @@
+.scroll__container {
+    min-width: 500px;
+    width: 50%;
+    height: 500px;
+    background-color: var(--theme);
+    box-shadow: 2px 2px 5px 0 #333;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 50px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}

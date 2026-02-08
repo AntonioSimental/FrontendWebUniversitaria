@@ -1,0 +1,31 @@
+.button__form {
+    background-color: #0056b3;
+    color: #fff;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color .5s, transform .5s;
+}
+
+.button__form:hover {
+    background-color: #0088b3;
+    transform: scale(1.03);
+}
+
+.button__cancel {
+    background-color: #f00;
+    color: #fff;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color .5s, transform .5s;
+}
+
+.button__cancel:hover {
+    background-color: #fbb;
+    transform: scale(1.03);
+}
