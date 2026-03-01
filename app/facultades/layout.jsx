@@ -7,8 +7,7 @@ export default function RootLayoutFacultades({ children }) {
   return (
       <div>
         <NavBar>
-          <NavLink link="#" text="📝Terms and conditions" />
-          <NavLink link="/" text="🏠Back to Home" />
+          <NavLink display="block" link="/" text="🏠Back to Home" />
           <BreadCrumb />
         </NavBar>
         {children}

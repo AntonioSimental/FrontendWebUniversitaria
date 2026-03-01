@@ -5,10 +5,11 @@
 
 .about__image {
     aspect-ratio: 8 / 10;
+    max-width: 100%;
 }
 
 @media (max-width: 900px) {
     .image__container {
-        transform: scale(0.9);
+        transform: scale(0.7);
     }
 }

@@ -1,8 +1,8 @@
 import "../../styles/inputStyles/navLink.css";
 import Link from "next/link";
 
-export default function NavLink({ link, text }) {
+export default function NavLink({ link, text, display }) {
   return (
-    <Link className="nav__link" href={link}>{text}</Link>
+    <Link style={{"--display": display}} className="nav__link" href={link}>{text}</Link>
   );
 }
