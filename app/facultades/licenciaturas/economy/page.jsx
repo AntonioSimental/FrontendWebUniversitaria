@@ -1,43 +1,28 @@
-"use client"
-
 import SectionContainer from "@/components/containers/sectionContainer";
-import TextCard from "@/components/containers/textCard";
-import Subtitle from "@/components/texts/subtitle";
-import Paragraph from "@/components/texts/paragraph";
+import RenderPromises from "@/components/containers/renderPromises";
+import RenderAsync from "@/components/containers/renderAsync";
+import "../../../../styles/pagesStyles/software.css";
 import LinkButton from "@/components/inputs/linkButton";
-import  "../../../../styles/imageStyles.css";
-import "../../../../styles/inputStyles/button.css";
-import "../../../../styles/carrersStyles.css";
-import { useState } from "react";
+import Paragraph from "@/components/texts/paragraph";
 
 export default function EconomyPage() {
-  const [ state, setState  ] = useState(false);
-  
-  function showCard() {
-    setState(!state);
-  }
-
   return (
     <SectionContainer theme="#f5f5f5">
-      <TextCard shadow={true} theme="#EEF2F7">
-        <img className="image__16-9" src="/images/imageLic2.png" alt="" />
-        <Subtitle text="Bachelor’s Degree in Business Economic Management" />
-        <button className="button__form" onClick={showCard}>Sign up now</button>
-      </TextCard>
-
-      <LinkButton link="/facultades/licenciaturas">
-        <Paragraph text="Go Back" color="#f00" />
-      </LinkButton>
-
-      {state && (
-        <div className="container__hidden">
-          <TextCard theme="#333">
-            <Paragraph text="404 ERROR" color="#f00"/>
-            <Paragraph text="Content not Available" color="#f00"/>
-            <button className="button__cancel" onClick={showCard}>Close</button>
-          </TextCard>
+      <SectionContainer theme="#f5f5f5">
+        <h3 className="title__page">Economy</h3>
+        <div className="software__container">
+          <RenderAsync link="https://pokeapi.co/api/v2/pokemon/squirtle" />
+          <RenderPromises
+            link1="https://digimon-api.vercel.app/api/digimon/name/MetalGreymon"
+            link2="https://digimon-api.vercel.app/api/digimon/name/Garurumon"
+            link3="https://pokeapi.co/api/v2/pokemon/Kakuna"
+            link4="https://restcountries.com/v3.1/name/Russia"
+          />
         </div>
-      )}
+        <LinkButton link="/facultades/licenciaturas">
+          <Paragraph color="#f00" text="Back" />
+        </LinkButton>
+      </SectionContainer>
     </SectionContainer>
   );
 }
